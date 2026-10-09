@@ -1,0 +1,38 @@
+# pastel-rose -- made in paratune from pastel-rose.
+#
+# rendered by colourway from sources/pastel-rose.css;
+# change the source, not this file.
+
+background = #f082f0
+foreground = #020709
+cursor-color = #413700
+cursor-text = #b1a3ca
+selection-background = #fb58e3
+selection-foreground = #6de002
+
+palette = 0=#e577ff
+palette = 1=#3cdddd
+palette = 2=#ffffff
+palette = 3=#ffff1d
+palette = 4=#00001a
+palette = 5=#89fc00
+palette = 6=#20ffff
+palette = 7=#ffffff
+palette = 8=#080609
+palette = 9=#a0254b
+palette = 10=#0a6aa0
+palette = 11=#ffff1d
+palette = 12=#08020e
+palette = 13=#00ff0b
+palette = 14=#20ffff
+palette = 15=#ffffff
+
+palette = 22=#536be2
+palette = 52=#f07099
+palette = 153=#080808
+palette = 175=#9384ff
+palette = 180=#1400e9
+palette = 188=#7700c8
+palette = 219=#99ca4e
+palette = 231=#cfe7fc
+palette = 252=#121f2c

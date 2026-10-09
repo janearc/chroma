@@ -1,0 +1,60 @@
+# vim: set filetype=game:
+# game: this repository
+#
+# what are we doin here folks were doing colorful stuff and we're irradiating
+# vim, it's gonna be great.
+name chroma
+
+# the members, bottom to top, and the tag each is taken at. game release
+# stack lays each one beside chroma under its own name, with a go.work, and
+# each member's own .game says what its sweep skips.
+stack game v0.4.0
+stack libtheme-css v0.4.2
+stack readme v0.1.0
+
+# normal game lints for chroma
+lint width 80
+lint rows 25
+lint comments
+lint print
+lint exclaim
+lint shout
+lint words hyperscaler enterprise-grade blazing-fast load-bearing
+lint paragraph 4
+
+# this readme has some special stuff because it's got css and so on. so we
+# excelude a couple things.
+lint allow colourways/README.md rows paragraph
+
+# i cannot help it if i am excitable please forgive me (name of broad who built the worst linter in the history of linters)
+lint allow colourways/INSTALL.md exclaim
+
+# we're citing sources not shouting, we promise to put the caps back when
+# we're done with them
+lint allow colourways/sources/SOURCES.md shout
+lint allow cmd/spectra/main.go shout
+
+# install the themes for our bravest of users and myself
+run install . :: go run ./cmd/colourway install colourways
+
+# visualdocs, from the libtheme-css member
+run visualdocs .      :: go run github.com/janearc/libtheme-css/cmd/visualdocs
+run visualdocs-css .  :: go run github.com/janearc/libtheme-css/cmd/visualdocs --css
+
+# colourway
+run pictures .        :: go run ./cmd/colourway pictures colourways
+run page .            :: go run ./cmd/colourway page colourways bin/colourways.html
+
+# theme, from the libtheme-css and readme members
+run known .           :: go run github.com/janearc/libtheme-css/cmd/libtheme known
+run known .           :: go run github.com/janearc/libtheme-css/cmd/libtheme known --paint
+run known .           :: go run github.com/janearc/libtheme-css/cmd/libtheme roundtrip
+run docs .            :: go doc -all github.com/janearc/libtheme-css/primitives/swatch
+run docs .            :: go doc -all github.com/janearc/libtheme-css/primitives/functions
+run docs .            :: go doc -all github.com/janearc/libtheme-css/spaces/ok
+run docs .            :: go doc -all github.com/janearc/libtheme-css/spaces/srgb
+run docs .            :: go doc -all github.com/janearc/libtheme-css/css
+run docs .            :: go doc -all github.com/janearc/libreadme/profile
+run docs .            :: go doc -all github.com/janearc/libreadme/colour
+run docs .            :: go doc -all github.com/janearc/libreadme/check
+run docs .            :: go doc -all github.com/janearc/libreadme/css

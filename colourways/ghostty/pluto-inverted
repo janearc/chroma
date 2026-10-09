@@ -1,0 +1,47 @@
+# pluto -- a light colourway, pluto as new horizons first showed it on
+# 13 july 2015, the day before closest approach (nasa/jhuapl/swri,
+# pia19708). the ground is the heart; the ink is the whale, darkened to 10
+# to 1; the selection is the north polar cap, claude's band the midlands,
+# dim text the disc. pluto has no red, green or blue to speak of, so the
+# sixteen are the screen's own wavelengths, darkened to stand on the heart.
+# samples in cmd/spectra/data/pluto-2015.css. made by spectra,
+# github.com/janearc/chroma/cmd/spectra, 2026-10-05.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/pluto.css;
+# change the source, not this file.
+
+background = #163d62
+foreground = #d5e4ef
+cursor-color = #d5e4ef
+cursor-text = #163d62
+selection-background = #295177
+selection-foreground = #d5e4ef
+
+palette = 0=#2a4965
+palette = 1=#77f1ff
+palette = 2=#f8b1ff
+palette = 3=#bbbaff
+palette = 4=#ffbd7d
+palette = 5=#85ff86
+palette = 6=#ffb4b6
+palette = 7=#d0dae2
+palette = 8=#9cafbf
+palette = 9=#a3f9ff
+palette = 10=#fcccff
+palette = 11=#d3d2ff
+palette = 12=#ffd4a6
+palette = 13=#acffad
+palette = 14=#ffced0
+palette = 15=#f0f8fc
+
+palette = 22=#505987
+palette = 52=#2b6687
+palette = 153=#f8b1ff
+palette = 175=#9cafbf
+palette = 180=#ffbd7d
+palette = 188=#d5e4ef
+palette = 219=#85ff86
+palette = 231=#d5e4ef
+palette = 252=#d5e4ef

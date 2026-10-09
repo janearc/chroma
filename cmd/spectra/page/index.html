@@ -1,0 +1,193 @@
+<title>Spectral Plates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* one column of plates on her twilight-burnt colourway; each spectrum sits
+   in a dark neutral mount, as a slide on a lightbox, so the surround does
+   not tint the colours being judged. single theme, by choice. */
+:root {
+  --ground: #b37f53;      /* twilight-burnt ground */
+  --ink: #1c2210;         /* twilight-burnt ink */
+  --mount: #1b1a18;       /* the plate's surround, a warm near-black */
+  --mount-ink: #e9dcc6;   /* labels on the mount */
+  --rule: #8a5f3c;        /* hairlines on the ground */
+  --display: "Spectral", Georgia, "Times New Roman", serif;
+  --body: "Spectral", Georgia, "Times New Roman", serif;
+  --data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 1.125rem/1.55 var(--body);
+}
+main {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding-inline: 16px;
+  padding-block: 2.5rem 4rem;
+  display: grid;
+  gap: 2.5rem;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; text-wrap: balance; }
+h1 { font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.01em; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+p { margin: 0; max-width: 65ch; }
+.lede { display: grid; gap: 0.9rem; }
+.profile { display: grid; gap: 1.25rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+.range { font: 500 0.85rem/1.4 var(--data); letter-spacing: 0.04em; text-transform: uppercase; }
+.plate {
+  background: var(--mount);
+  color: var(--mount-ink);
+  border-radius: 3px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.plate header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1rem; align-items: baseline; }
+.plate h3 { color: var(--mount-ink); }
+.params { font: 400 0.8rem/1.4 var(--data); }
+.label { font: 500 0.72rem/1.3 var(--data); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.9; }
+canvas { display: block; width: 100%; }
+.seen { height: 48px; }
+.bars { height: 150px; }
+.foot { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem 1rem; align-items: center; }
+.chip { width: 4.5rem; height: 4.5rem; border-radius: 2px; }
+.chip-text { display: grid; gap: 0.2rem; min-width: 0; }
+.hex { font: 500 0.95rem/1.3 var(--data); }
+.ramp { height: 22px; border-radius: 2px; }
+.method { font-size: 1rem; display: grid; gap: 0.7rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+code { font: 400 0.9em var(--data); }
+@media (max-width: 480px) { h1 { font-size: 2rem; } .bars { height: 120px; } }
+</style>
+
+<main>
+  <section class="lede">
+    <h1>Spectral Plates</h1>
+    <p>Gamma-ray bursts carried into visible light by libtheme's radiation profiles. A profile maps its band onto the observer's visible range, 360 to 830 nm, evenly in the logarithm of wavelength, so every factor of ten in energy gets an equal slice of the rainbow. Higher energy lands bluer.</p>
+    <p>Through the whole Fermi profile, 10 keV to 300 GeV, the eye's most sensitive stretch, about 450 to 650 nm, stands for roughly 1.5 MeV to 3 GeV. A burst there is only its high-energy tail, and bursts share the slope of that tail, so a long burst and a short one come out the same orange and a burst's softening does not show. Through Fermi's burst monitor alone, 8 keV to 40 MeV, the peak lands inside the visible: a long burst comes out tan, a short one sea green, and a short burst softens from green to tan.</p>
+  </section>
+  <div id="profiles"></div>
+  <section class="method">
+    <h2>How these were made</h2>
+    <p>Each burst is the Band function, with round values typical of the BATSE and Fermi catalogues. Long: low slope &minus;1, high slope &minus;2.3, peak 200 keV. Short: &minus;0.5, &minus;2.3, peak 600 keV. Its power in each of libtheme's bands goes in through <code>bands.Lines</code> and out through <code>Profile.Light</code>.</p>
+    <p>The top strip is the light as an eye would see it after the profile, with one exposure for the whole strip. The bars are each band's power, linear, drawn in its wavelength's own colour. Single colours and the softening ramp are held at one oklab lightness, 0.72, so only hue and chroma change, and are pulled into sRGB by chroma with <code>ok.Fit</code>. The softening ramp moves the peak from the burst's own value down to a tenth of it.</p>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const data = window.SPECTRA;
+  const holder = document.getElementById("profiles");
+
+  function energyLabel(kev) {
+    if (kev >= 1e6) return (kev / 1e6) + " GeV";
+    if (kev >= 1e3) return (kev / 1e3) + " MeV";
+    return kev + " keV";
+  }
+
+  function sized(canvas) {
+    const scale = window.devicePixelRatio || 1;
+    const box = canvas.getBoundingClientRect();
+    canvas.width = Math.round(box.width * scale);
+    canvas.height = Math.round(box.height * scale);
+    const pen = canvas.getContext("2d");
+    pen.setTransform(scale, 0, 0, scale, 0, 0);
+    return { pen, width: box.width, height: box.height };
+  }
+
+  // where a wavelength sits across a strip: even in its logarithm
+  function across(profile, nm, width) {
+    return width * Math.log(nm / profile.nmLo) / Math.log(profile.nmHi / profile.nmLo);
+  }
+
+  function drawSeen(canvas, profile, strip) {
+    const { pen, width, height } = sized(canvas);
+    pen.fillStyle = "#000";
+    pen.fillRect(0, 0, width, height);
+    const step = width / strip.length;
+    strip.forEach((column, index) => {
+      pen.fillStyle = column.seen;
+      pen.fillRect(Math.floor(index * step), 0, Math.ceil(step) + 1, height);
+    });
+  }
+
+  function drawBars(canvas, profile, strip) {
+    const { pen, width, height } = sized(canvas);
+    const top = 18, bottom = 18, plot = height - top - bottom;
+    pen.fillStyle = "#1b1a18";
+    pen.fillRect(0, 0, width, height);
+    const step = width / strip.length;
+    strip.forEach((column, index) => {
+      const tall = column.power * plot;
+      pen.fillStyle = column.hue;
+      pen.fillRect(Math.floor(index * step), top + plot - tall, Math.ceil(step) + 1, tall);
+    });
+    pen.font = "500 10px 'IBM Plex Mono', ui-monospace, monospace";
+    pen.fillStyle = "#e9dcc6";
+    pen.strokeStyle = "rgba(233,220,198,0.35)";
+    pen.textBaseline = "alphabetic";
+    [400, 500, 600, 700, 800].forEach(nm => {
+      const x = across(profile, nm, width);
+      pen.fillRect(x, top + plot, 1, 4);
+      pen.textAlign = x < 20 ? "left" : x > width - 20 ? "right" : "center";
+      pen.fillText(nm + " nm", x, height - 3);
+    });
+    pen.textBaseline = "top";
+    for (let kev = 10; kev <= profile.kevHi; kev *= 10) {
+      if (kev < profile.kevLo) continue;
+      const t = Math.log(profile.kevHi / kev) / Math.log(profile.kevHi / profile.kevLo);
+      const x = width * t;
+      pen.fillRect(x, top - 4, 1, 4);
+      pen.textAlign = x < 30 ? "left" : x > width - 30 ? "right" : "center";
+      if (width > 520 || Math.round(Math.log10(kev)) % 2 === 1) pen.fillText(energyLabel(kev), x, 1);
+    }
+  }
+
+  function plate(profile, drawn) {
+    const shape = drawn.burst;
+    const article = document.createElement("article");
+    article.className = "plate";
+    article.innerHTML =
+      '<header><h3>' + shape.name + '</h3><span class="params">low ' + shape.alpha +
+      ' &middot; high ' + shape.beta + ' &middot; peak ' + energyLabel(shape.peak) + '</span></header>' +
+      '<span class="label">as the eye would see it</span><canvas class="seen"></canvas>' +
+      '<span class="label">power by band, in each wavelength\'s own colour</span><canvas class="bars"></canvas>' +
+      '<div class="foot"><div class="chip" style="background:' + drawn.colour + '"></div>' +
+      '<div class="chip-text"><span class="label">the whole burst, one colour</span>' +
+      '<span class="hex">' + drawn.colour + '</span>' +
+      '<span class="label">softening, peak ' + energyLabel(shape.peak) + ' to ' + energyLabel(shape.peak / 10) + '</span>' +
+      '<div class="ramp" style="background:linear-gradient(90deg,' + drawn.softening.join(",") + ')"></div></div></div>';
+    const draw = () => {
+      drawSeen(article.querySelector(".seen"), profile, drawn.strip);
+      drawBars(article.querySelector(".bars"), profile, drawn.strip);
+    };
+    return { article, draw };
+  }
+
+  const drawers = [];
+  data.profiles.forEach(profile => {
+    const section = document.createElement("section");
+    section.className = "profile";
+    section.innerHTML = '<h2>' + (profile.name === "fermi" ? "The whole Fermi profile" : "Fermi's burst monitor") +
+      '</h2><span class="range">' + energyLabel(Math.round(profile.kevLo)) + ' to ' +
+      energyLabel(Math.round(profile.kevHi)) + ' &rarr; ' + profile.nmLo + ' to ' + profile.nmHi + ' nm</span>';
+    profile.bursts.forEach(drawn => {
+      const made = plate(profile, drawn);
+      section.appendChild(made.article);
+      drawers.push(made.draw);
+    });
+    holder.appendChild(section);
+  });
+  holder.style.display = "grid";
+  holder.style.gap = "2.5rem";
+  const all = () => drawers.forEach(draw => draw());
+  all();
+  let pending;
+  window.addEventListener("resize", () => { clearTimeout(pending); pending = setTimeout(all, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(all);
+})();
+</script>

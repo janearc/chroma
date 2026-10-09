@@ -1,0 +1,46 @@
+# fermi-long -- a long gamma-ray burst seen through libtheme's fermi
+# profile, 10 kev to 300 gev carried onto visible. the ground is the deep
+# indigo at its violet end; the ink is the whole burst as one colour, lit to
+# 11 to 1. each of the terminal's colours is the wavelength the screen's own
+# colour points at, lit to 6 to 1, or 8.5 for the brights. magenta is in no
+# spectrum, so it is the screen's red mixed with violet. made by spectra,
+# github.com/janearc/chroma/cmd/spectra, 2026-10-05.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/fermi-long.css;
+# change the source, not this file.
+
+background = #e4f687
+foreground = #4a85ad
+cursor-color = #004374
+cursor-text = #f1ffa7
+selection-background = #d5ff3f
+selection-foreground = #004374
+
+palette = 0=#e2ff6f
+palette = 1=#00a0b8
+palette = 2=#e352ff
+palette = 3=#6864ff
+palette = 4=#c96900
+palette = 5=#00d406
+palette = 6=#ff595f
+palette = 7=#015ea7
+palette = 8=#a08d00
+palette = 9=#006a7e
+palette = 10=#db31ff
+palette = 11=#4b46ff
+palette = 12=#874900
+palette = 13=#007a0d
+palette = 14=#ff383f
+palette = 15=#003860
+
+palette = 22=#e6d5b1
+palette = 52=#b9e19a
+palette = 153=#e352ff
+palette = 175=#a08d00
+palette = 180=#c96900
+palette = 188=#4a85ad
+palette = 219=#00d406
+palette = 231=#4a85ad
+palette = 252=#4a85ad

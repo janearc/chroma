@@ -1,0 +1,74 @@
+# twilight-deep -- twilight's ground taken darker: ink #38241e on ground
+# #808a63, 4.0:1, chosen in paratune, with claude code's own colours tuned
+# to match. the palette is darker so the accents still read on the deeper
+# ground, and the statusline's bar is twilight's ramp moved by the same
+# shift.
+#
+# rendered by colourway from sources/twilight-deep.css;
+# change the source, not this file.
+
+background = #808a63
+foreground = #38241e
+cursor-color = #38241e
+cursor-text = #808a63
+selection-background = #7f794b
+selection-foreground = #38241e
+
+palette = 0=#57696a
+palette = 1=#4a1810
+palette = 2=#1c2810
+palette = 3=#3a2c08
+palette = 4=#141c3a
+palette = 5=#3a1830
+palette = 6=#10302e
+palette = 7=#7f794b
+palette = 8=#2e2a1c
+palette = 9=#5a2015
+palette = 10=#263214
+palette = 11=#4a3a0c
+palette = 12=#1c2850
+palette = 13=#4a2040
+palette = 14=#163c3a
+palette = 15=#a9a269
+
+palette = 17=#908a56
+palette = 18=#8d8654
+palette = 22=#c19a43
+palette = 24=#898457
+palette = 31=#85815b
+palette = 38=#81805e
+palette = 52=#8c6b4e
+palette = 67=#7d7c5e
+palette = 77=#263214
+palette = 81=#10302e
+palette = 103=#7a765c
+palette = 114=#1c2810
+palette = 139=#767158
+palette = 141=#3a1830
+palette = 148=#263214
+palette = 153=#1c2810
+palette = 167=#4a1810
+palette = 169=#6f6750
+palette = 175=#ce773f
+palette = 180=#3e3e26
+palette = 186=#4a3a0c
+palette = 188=#20e1e7
+palette = 197=#5a2015
+palette = 198=#685d48
+palette = 205=#6c624d
+palette = 208=#5a2a08
+palette = 211=#655944
+palette = 214=#4e4a23
+palette = 215=#514d27
+palette = 218=#62583f
+palette = 219=#ffaa37
+palette = 222=#544f2a
+palette = 223=#57512f
+palette = 224=#5a5332
+palette = 225=#5f563c
+palette = 231=#313b53
+palette = 239=#2e2a1c
+palette = 242=#3a3424
+palette = 251=#182040
+palette = 252=#c5e699
+palette = 254=#5c5437

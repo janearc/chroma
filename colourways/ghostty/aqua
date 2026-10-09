@@ -1,0 +1,63 @@
+# aqua -- a pale aqua ground with slate blue ink, 6.0:1, chosen in paratune.
+# a bright ground narrows the pupil, and a narrow pupil is a lens stopped
+# down: the letters land sharper. cool, not white, so it does not sting.
+# accents are dark and cool so they read on the bright ground; cells 17 to
+# 254 are the status-line bar's ramp, as tints of the ground.
+#
+# rendered by colourway from sources/aqua.css;
+# change the source, not this file.
+
+background = #a3ffff
+foreground = #505880
+cursor-color = #505880
+cursor-text = #a3ffff
+selection-background = #7fe0e6
+selection-foreground = #2a3050
+
+palette = 0=#1e2a38
+palette = 1=#8a2a3a
+palette = 2=#1f5a3a
+palette = 3=#6a5210
+palette = 4=#1f3a8a
+palette = 5=#6a2a7a
+palette = 6=#0a5a6a
+palette = 7=#8fe6e6
+palette = 8=#4a6070
+palette = 9=#a03548
+palette = 10=#2a6a46
+palette = 11=#7a6018
+palette = 12=#2a4aa0
+palette = 13=#7a3a8a
+palette = 14=#146a7a
+palette = 15=#b8ffff
+
+palette = 17=#9df6f6
+palette = 18=#99f1f1
+palette = 22=#80d3ca
+palette = 24=#95eced
+palette = 31=#91e8e9
+palette = 38=#8de3e5
+palette = 52=#abcaca
+palette = 67=#89dfe1
+palette = 103=#85dadd
+palette = 139=#81d5d8
+palette = 153=#1f5a3a
+palette = 169=#79ccd0
+palette = 175=#7dd1d4
+palette = 180=#1f3a8a
+palette = 188=#505880
+palette = 198=#72c3c8
+palette = 205=#76c8cc
+palette = 211=#6ebec4
+palette = 214=#4f9aa3
+palette = 215=#529ea7
+palette = 218=#6abac0
+palette = 219=#6a2a7a
+palette = 222=#56a3ab
+palette = 223=#5aa7af
+palette = 224=#5eacb3
+palette = 225=#66b5bb
+palette = 231=#505880
+palette = 251=#505880
+palette = 252=#505880
+palette = 254=#62b1b7

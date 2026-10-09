@@ -1,0 +1,5 @@
+/bin/
+/measure-out/
+*.test
+go.work
+go.work.sum

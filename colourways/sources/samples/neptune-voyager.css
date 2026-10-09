@@ -1,0 +1,23 @@
+/*
+ * neptune-voyager -- neptune as voyager 2 showed it, sampled from one
+ * picture and the picture not kept.
+ * source: NASA/JPL, PIA01492 "Neptune Full Disk View", Voyager 2 narrow
+ * angle camera, August 1989, 4.4 million miles out, 4 days 20 hours before
+ * closest approach. https://science.nasa.gov/photojournal/neptune-full-disk-view
+ * file: PIA01492.jpg, 2188 x 2185, 258997 bytes, fetched 2026-10-05.
+ * colour: made from images through the green and orange filters only, so
+ * these are two bands of light shown as three lamps, not a spectrum. each
+ * region is its pixels averaged in linear light, written to the byte; the
+ * disc is every pixel brighter than 0.01 luminance.
+ *
+ * disc: every pixel inside 70% of the radius, 1290490 pixels.
+ * limb: every pixel from 90% to 98% of the radius, 381308 pixels.
+ * clouds: the brightest 0.5% of the disc, 13169 pixels.
+ * dark-spot: the darkest 5% inside x 912-1246, y 851-1064, 3557 pixels.
+ */
+:root {
+  --disc: #3f60e2; /* oklch(54% 0.200 268.0) */
+  --limb: #2a3582; /* oklch(37% 0.130 272.3) */
+  --clouds: #6fbafd; /* oklch(77% 0.123 247.2) */
+  --dark-spot: #364dc7; /* oklch(48% 0.192 269.5) */
+}

@@ -1,0 +1,40 @@
+# pluto-coffee -- made in paratune from pluto-night.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/pluto-coffee.css;
+# change the source, not this file.
+
+background = #f2f2ef
+foreground = #988e83
+cursor-color = #040404
+cursor-text = #363636
+selection-background = #c7c7c7
+selection-foreground = #a09781
+
+palette = 0=#897f73
+palette = 1=#94b7bd
+palette = 2=#b7a2b8
+palette = 3=#b7a9c4
+palette = 4=#b8b09e
+palette = 5=#9fae9f
+palette = 6=#a3875b
+palette = 7=#9daeb1
+palette = 8=#9cb5bb
+palette = 9=#9bb5b9
+palette = 10=#bfa7c0
+palette = 11=#acacc4
+palette = 12=#b9b09b
+palette = 13=#9db79d
+palette = 14=#b7abab
+palette = 15=#9bb5bc
+
+palette = 22=#504947
+palette = 52=#545d5a
+palette = 153=#c0aec2
+palette = 175=#bdd3d6
+palette = 180=#c8bdad
+palette = 188=#c2b8ad
+palette = 219=#becbb0
+palette = 231=#b4c0c2
+palette = 252=#a9b5b8

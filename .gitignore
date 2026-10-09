@@ -1,0 +1,13 @@
+*.test
+/bin/
+/measure-out/
+go.work
+go.work.sum
+/cmd/colourway/colourway
+/cmd/libreadme/libreadme
+/cmd/libtheme/libtheme
+/cmd/spectra/spectra
+/cmd/visualdocs/visualdocs
+.DS_Store
+/cmd/paratune/paratune
+game

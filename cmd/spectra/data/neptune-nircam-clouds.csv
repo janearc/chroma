@@ -1,0 +1,13 @@
+# target: Neptune, the disc's brightest 15% through F140M, found again in the other filters by place: high cloud
+# source: JWST NIRCam, program 2739, filters F140M F210M F300M F460M, 2022-07-12; each value at its filter's pivot wavelength
+# archive: MAST, calibration level 3 images:
+#   jw02739-o004_t003_nircam_clear-f140m_i2d.fits, pipeline 3.0.0
+#   jw02739-o004_t003_nircam_clear-f210m_i2d.fits, pipeline 3.0.0
+#   jw02739-o004_t003_nircam_clear-f300m_i2d.fits, pipeline 3.0.0
+#   jw02739-o004_t003_nircam_clear-f460m_i2d.fits, pipeline 3.0.0
+# units: surface brightness in MJy/sr, mean over the region
+nm,mjy_per_sr
+1404.00,325.365
+2093.00,22.0937
+2989.00,57.6538
+4630.00,27.5691

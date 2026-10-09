@@ -1,0 +1,38 @@
+# pluto-night -- a dark colourway, made in paratune from pluto.
+#
+# rendered by colourway from sources/pluto-night.css;
+# change the source, not this file.
+
+background = #0b1134
+foreground = #bda79e
+cursor-color = #3b3b3b
+cursor-text = #333333
+selection-background = #060606
+selection-foreground = #5d87e1
+
+palette = 0=#1e2d50
+palette = 1=#d60b0d
+palette = 2=#74d474
+palette = 3=#88a709
+palette = 4=#3783ff
+palette = 5=#ff8cff
+palette = 6=#c5ffff
+palette = 7=#ff825f
+palette = 8=#cc6045
+palette = 9=#ff0909
+palette = 10=#398e39
+palette = 11=#818100
+palette = 12=#2076ff
+palette = 13=#c942c9
+palette = 14=#628383
+palette = 15=#c95c41
+
+palette = 22=#193139
+palette = 52=#3e1c29
+palette = 153=#61b161
+palette = 175=#b5553d
+palette = 180=#4c8ee2
+palette = 188=#6f9ad4
+palette = 219=#9264e3
+palette = 231=#a98e87
+palette = 252=#bf9f96

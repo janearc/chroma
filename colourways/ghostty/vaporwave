@@ -1,0 +1,48 @@
+# vaporwave -- matched to ~/.config/nvim/colors/vaporwave.lua
+#
+# Every text colour is placed against a measured comfortable band rather than
+# picked. Contrast has a ceiling as well as a floor: past it, light text on a
+# dark ground halates and the strokes smear. Plain white here is 18.6:1, which
+# is far past it. Nothing below exceeds about 12:1.
+#
+# The band is narrow, so the normal and bright halves of the palette cannot
+# separate by brightness alone -- they would either be indistinguishable or
+# push bright back through the ceiling. They separate by saturation instead,
+# with only a small step in lightness.
+#
+# rendered by colourway from sources/vaporwave.css;
+# change the source, not this file.
+
+background = #160d2b
+foreground = #cdc3d8
+cursor-color = #ffa2ff
+cursor-text = #160d2b
+selection-background = #3a2260
+selection-foreground = #cdc3d8
+
+palette = 0=#241245
+palette = 1=#ffa4d4
+palette = 2=#84d09c
+palette = 3=#e2b97b
+palette = 4=#94c3ff
+palette = 5=#ff9cfe
+palette = 6=#6ccee2
+palette = 7=#c6bbd9
+palette = 8=#5c4585
+palette = 9=#ffb8ee
+palette = 10=#8fdfa8
+palette = 11=#f3c684
+palette = 12=#a0d3ff
+palette = 13=#ffb5ff
+palette = 14=#74dcf2
+palette = 15=#d3c9e8
+
+palette = 22=#2f3947
+palette = 52=#482a47
+palette = 153=#9bcfa5
+palette = 175=#432c6b
+palette = 180=#00dff9
+palette = 188=#cdc3d8
+palette = 219=#ffa1ff
+palette = 231=#cdc3d8
+palette = 252=#cdc3d8

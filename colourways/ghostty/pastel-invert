@@ -1,0 +1,39 @@
+# pastel-invert -- pastel, inverted (the screen negative), its ground
+# and the colours on it turned greener and darker by eye.
+#
+# rendered by colourway from sources/pastel-invert.css;
+# change the source, not this file.
+
+background = #88bb82
+foreground = #353535
+cursor-color = #005191
+cursor-text = #beb794
+selection-background = #8fac71
+selection-foreground = #1c1c1c
+
+palette = 0=#d7ce9a
+palette = 1=#066c7c
+palette = 2=#aa3cb3
+palette = 3=#514cb2
+palette = 4=#9d4d00
+palette = 5=#06720c
+palette = 6=#ab4547
+palette = 7=#0a3359
+palette = 8=#836409
+palette = 9=#043e4a
+palette = 10=#9d1aa6
+palette = 11=#322fa6
+palette = 12=#513405
+palette = 13=#04430f
+palette = 14=#9d212c
+palette = 15=#1c1c1c
+
+palette = 22=#c99e5c
+palette = 52=#a0aa67
+palette = 153=#413f3f
+palette = 175=#5a607e
+palette = 180=#004194
+palette = 188=#593d54
+palette = 219=#000379
+palette = 231=#791157
+palette = 252=#992b57

@@ -1,0 +1,40 @@
+# pastel-rose -- made in paratune from pastel-rose.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/pastel-rose.css;
+# change the source, not this file.
+
+background = #0f7d0f
+foreground = #fdf8f6
+cursor-color = #bec8ff
+cursor-text = #4e5c35
+selection-background = #04a71c
+selection-foreground = #921ffd
+
+palette = 0=#1a8800
+palette = 1=#c32222
+palette = 2=#000000
+palette = 3=#0000e2
+palette = 4=#ffffe5
+palette = 5=#7603ff
+palette = 6=#df0000
+palette = 7=#000000
+palette = 8=#f7f9f6
+palette = 9=#5fdab4
+palette = 10=#f5955f
+palette = 11=#0000e2
+palette = 12=#f7fdf1
+palette = 13=#ff00f4
+palette = 14=#df0000
+palette = 15=#000000
+
+palette = 22=#ac941d
+palette = 52=#0f8f66
+palette = 153=#f7f7f7
+palette = 175=#6c7b00
+palette = 180=#ebff16
+palette = 188=#88ff37
+palette = 219=#6635b1
+palette = 231=#301803
+palette = 252=#ede0d3

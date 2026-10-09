@@ -1,0 +1,61 @@
+# twilight-burnt -- burnt green ink on a darker orange, twilight as it began
+# on 2026-10-01, before the ground went bright; with claude code's colours
+# dark on the orange.
+#
+# rendered by colourway from sources/twilight-burnt.css;
+# change the source, not this file.
+
+background = #b37f53
+foreground = #1c2210
+cursor-color = #2f3a1f
+cursor-text = #b37f53
+selection-background = #d4a070
+selection-foreground = #1c2210
+
+palette = 0=#2a2418
+palette = 1=#6e2a1f
+palette = 2=#2f3a1f
+palette = 3=#5a4410
+palette = 4=#24365a
+palette = 5=#5a2a4a
+palette = 6=#1f4a4a
+palette = 7=#b07a4e
+palette = 8=#4a3d2b
+palette = 9=#84362a
+palette = 10=#3b4826
+palette = 11=#6e5418
+palette = 12=#2f4470
+palette = 13=#6e3459
+palette = 14=#285c5c
+palette = 15=#cc976a
+
+palette = 17=#ad7b50
+palette = 18=#a9794f
+palette = 22=#9a7048
+palette = 24=#ae7f57
+palette = 31=#a87e5a
+palette = 38=#a27d5c
+palette = 52=#a86a4a
+palette = 67=#9e7a5a
+palette = 103=#9c7458
+palette = 139=#9a6e55
+palette = 153=#2f3a1f
+palette = 169=#94634c
+palette = 175=#976850
+palette = 180=#3a1830
+palette = 188=#f0c890
+palette = 198=#8f5942
+palette = 205=#925e47
+palette = 211=#8d5a3f
+palette = 214=#7d6122
+palette = 215=#806426
+palette = 218=#8b5c3b
+palette = 219=#1c2210
+palette = 222=#82652a
+palette = 223=#85642d
+palette = 224=#876230
+palette = 225=#8a5e37
+palette = 231=#1c2210
+palette = 251=#1c2210
+palette = 252=#1c2210
+palette = 254=#896033

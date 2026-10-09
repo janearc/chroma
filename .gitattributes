@@ -1,0 +1,9 @@
+# colourways compare as colours, not as text. with the colourway driver
+# set (see colourways/INSTALL.md), git diff shows each role that changed,
+# how far it moved in oklab and which way, and git log -p shows each
+# role's hex and oklch; without it, git diffs these files as text.
+colourways/sources/*.css diff=colourway
+colourways/sources/samples/*.css diff=colourway
+colourways/ghostty/* diff=colourway
+colourways/nvim/colors/*.lua diff=colourway
+colourways/glamour/*.json diff=colourway

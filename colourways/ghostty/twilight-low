@@ -1,0 +1,59 @@
+# twilight-low -- made in paratune from twilight.
+#
+# rendered by colourway from sources/twilight-low.css;
+# change the source, not this file.
+
+background = #eb3f12
+foreground = #c6deff
+cursor-color = #02008b
+cursor-text = #ff9a41
+selection-background = #ff7a1a
+selection-foreground = #2343ff
+
+palette = 0=#106d79
+palette = 1=#ffffff
+palette = 2=#d2ffaa
+palette = 3=#fff3d3
+palette = 4=#eef4ff
+palette = 5=#ffffff
+palette = 6=#bbfdff
+palette = 7=#fffcfa
+palette = 8=#a3a3ae
+palette = 9=#ffffff
+palette = 10=#d1ffa1
+palette = 11=#fff3d5
+palette = 12=#f0f5ff
+palette = 13=#ffffff
+palette = 14=#b2fffe
+palette = 15=#ffffff
+
+palette = 17=#ffffff
+palette = 18=#ffffff
+palette = 22=#90ba7c
+palette = 24=#fffdfc
+palette = 31=#fffefe
+palette = 38=#ffffff
+palette = 52=#f086f0
+palette = 67=#ffffff
+palette = 103=#ffffff
+palette = 139=#ffffff
+palette = 153=#0a1812
+palette = 169=#ffffff
+palette = 175=#8fbcff
+palette = 180=#a9d8ff
+palette = 188=#d1ffa1
+palette = 198=#ffffff
+palette = 205=#ffffff
+palette = 211=#ffffff
+palette = 214=#ffcc9a
+palette = 215=#ffd4ac
+palette = 218=#fffbf9
+palette = 219=#ffe1c5
+palette = 222=#ffdbbd
+palette = 223=#ffe2cc
+palette = 224=#ffe9d7
+palette = 225=#fff6ef
+palette = 231=#3c5c3e
+palette = 251=#8686ff
+palette = 252=#fff9e4
+palette = 254=#fff1e4

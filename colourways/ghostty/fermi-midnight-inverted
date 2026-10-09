@@ -1,0 +1,63 @@
+# fermi-midnight -- a dark colourway, tuned in paratune from fermi-long.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/fermi-midnight.css;
+# change the source, not this file.
+
+background = #f5f1cf
+foreground = #817b73
+cursor-color = #363636
+cursor-text = #847d4d
+selection-background = #d2cba7
+selection-foreground = #6c8597
+
+palette = 0=#ece6c6
+palette = 1=#55a0ad
+palette = 2=#ac76b4
+palette = 3=#8582b8
+palette = 4=#af8754
+palette = 5=#57af5c
+palette = 6=#ac797a
+palette = 7=#507b9d
+palette = 8=#b4a262
+palette = 9=#4e838d
+palette = 10=#a361ab
+palette = 11=#716dad
+palette = 12=#917451
+palette = 13=#548c59
+palette = 14=#a16568
+palette = 15=#416072
+
+palette = 17=#f2e7d0
+palette = 18=#efe4cb
+palette = 22=#e3d2ca
+palette = 24=#ffe9dc
+palette = 28=#eec3f5
+palette = 31=#ffe5db
+palette = 38=#fee1d9
+palette = 52=#ceddc7
+palette = 67=#f6dfca
+palette = 88=#a9e5ed
+palette = 103=#dddec3
+palette = 139=#c8dec7
+palette = 153=#ac76b4
+palette = 169=#9cfdb4
+palette = 175=#b4a262
+palette = 180=#af8754
+palette = 188=#817b73
+palette = 198=#88ffc3
+palette = 205=#91ffbd
+palette = 211=#8af7c3
+palette = 214=#adc9ff
+palette = 215=#aacffc
+palette = 218=#9bdeb8
+palette = 219=#57af5c
+palette = 222=#b6cbfd
+palette = 223=#afcff7
+palette = 224=#b1cfcf
+palette = 225=#b1d1b1
+palette = 231=#817b73
+palette = 251=#7f7f80
+palette = 252=#817b73
+palette = 254=#c6c7c7

@@ -1,0 +1,54 @@
+/* the readme drawn in a colourway: the colourways' own sheets come first,
+   one as the page's default and every one behind a name at the top, and
+   this reads their roles, so the page is a colourway, never a browser's
+   white. markdown's own roles first, as glow reads them, then the general
+   ones, then the ink. links are the body's ink, underlined, since some
+   colourways keep their link colour for code and it is faint as prose. */
+html, body {
+  background: var(--ground);
+  color: var(--md-body, var(--ink));
+}
+body {
+  max-width: 76em;
+  margin: 0 auto;
+  padding: 2em;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2 {
+  color: var(--md-heading, var(--heading, var(--ink)));
+}
+a {
+  color: var(--md-body, var(--ink));
+  text-decoration: underline;
+}
+code {
+  background: var(--md-code-ground, var(--panel, transparent));
+  color: var(--md-code, var(--code, var(--ink)));
+}
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 0.25em solid var(--md-rule, var(--border, var(--ink)));
+  color: var(--md-quote, var(--dim, var(--ink)));
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+  padding: 0.5em;
+}
+td img {
+  width: 22em;
+  max-width: 100%;
+  height: auto;
+}
+.themes a {
+  margin-right: 0.75em;
+  white-space: nowrap;
+}

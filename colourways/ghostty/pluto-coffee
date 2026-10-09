@@ -1,0 +1,38 @@
+# pluto-coffee -- made in paratune from pluto-night.
+#
+# rendered by colourway from sources/pluto-coffee.css;
+# change the source, not this file.
+
+background = #0d0d10
+foreground = #67717c
+cursor-color = #fbfbfb
+cursor-text = #c9c9c9
+selection-background = #383838
+selection-foreground = #5f687e
+
+palette = 0=#76808c
+palette = 1=#6b4842
+palette = 2=#485d47
+palette = 3=#48563b
+palette = 4=#474f61
+palette = 5=#605160
+palette = 6=#5c78a4
+palette = 7=#62514e
+palette = 8=#634a44
+palette = 9=#644a46
+palette = 10=#40583f
+palette = 11=#53533b
+palette = 12=#464f64
+palette = 13=#624862
+palette = 14=#485454
+palette = 15=#644a43
+
+palette = 22=#afb6b8
+palette = 52=#aba2a5
+palette = 153=#3f513d
+palette = 175=#422c29
+palette = 180=#374252
+palette = 188=#3d4752
+palette = 219=#41344f
+palette = 231=#4b3f3d
+palette = 252=#564a47

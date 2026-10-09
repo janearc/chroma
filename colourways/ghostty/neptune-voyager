@@ -1,0 +1,45 @@
+# neptune-voyager -- neptune as voyager 2 showed it in august 1989, from
+# the green and orange filters of its narrow angle camera (nasa/jpl,
+# pia01492). the ground is the limb in shadow, greyed to her hue rule; the
+# ink is the white clouds, lit to 11 to 1; the selection and the blues are
+# the disc; dim text is the great dark spot. neptune has no red, green or
+# yellow, so those are the screen's own wavelengths, as in fermi-long.
+# samples in cmd/spectra/data/neptune-voyager.css. made by spectra,
+# github.com/janearc/chroma/cmd/spectra, 2026-10-05.
+#
+# rendered by colourway from sources/neptune-voyager.css;
+# change the source, not this file.
+
+background = #111523
+foreground = #9acfff
+cursor-color = #9acfff
+cursor-text = #111523
+selection-background = #203480
+selection-foreground = #9acfff
+
+palette = 0=#22293e
+palette = 1=#ff5e46
+palette = 2=#1cac00
+palette = 3=#979a00
+palette = 4=#6a8fff
+palette = 5=#ff29f9
+palette = 6=#5b9ad2
+palette = 7=#72bdff
+palette = 8=#5474ff
+palette = 9=#ff9581
+palette = 10=#24ce00
+palette = 11=#b4b900
+palette = 12=#92b0ff
+palette = 13=#ff84f2
+palette = 14=#6db8fa
+palette = 15=#acd7ff
+
+palette = 22=#19382b
+palette = 52=#462a30
+palette = 153=#1cac00
+palette = 175=#5474ff
+palette = 180=#6a8fff
+palette = 188=#9acfff
+palette = 219=#ff29f9
+palette = 231=#9acfff
+palette = 252=#9acfff

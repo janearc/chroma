@@ -1,0 +1,25 @@
+/*
+ * pluto-2018 -- pluto as new horizons showed it, sampled from one picture and
+ * the picture not kept.
+ * source: NASA/JHUAPL/SwRI/Alex Parker, "True Colors of Pluto", New Horizons
+ * MVIC, 14 July 2015, 35,445 km out; recalibrated to natural colour, released
+ * 23 July 2018. https://science.nasa.gov/resource/true-colors-of-pluto/
+ * file: BIG_P_COLOR_2_TRUE_COLOR1.png, 8000 x 8000, 57098975 bytes, fetched
+ * 2026-10-05.
+ * colour: a single MVIC colour scan, processed to approximate what an eye
+ * would see; not a spectrum. each region is its pixels averaged in linear
+ * light, written to the byte; space, under 0.01 luminance, is left out.
+ *
+ * disc: every pixel inside 70% of the radius, 17591773 pixels.
+ * heart: every pixel in x 4300-5300, y 4000-5400, 1400000 pixels.
+ * pole: every pixel in x 3400-4800, y 900-1500, 840000 pixels.
+ * midlands: every pixel in x 2000-3400, y 2400-3400, 1400000 pixels.
+ * whale: every pixel in x 1200-2800, y 5100-6000, 1439867 pixels.
+ */
+:root {
+  --disc: #c1b7a7; /* oklch(78% 0.024 77.9) */
+  --heart: #c9bead; /* oklch(81% 0.026 78.6) */
+  --pole: #eadac3; /* oklch(90% 0.035 78.0) */
+  --midlands: #ddd4c6; /* oklch(87% 0.022 78.7) */
+  --whale: #443323; /* oklch(34% 0.036 66.8) */
+}

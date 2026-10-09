@@ -1,0 +1,40 @@
+# pluto-night -- a dark colourway, made in paratune from pluto.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/pluto-night.css;
+# change the source, not this file.
+
+background = #f4eecb
+foreground = #425861
+cursor-color = #c4c4c4
+cursor-text = #cccccc
+selection-background = #f9f9f9
+selection-foreground = #a2781e
+
+palette = 0=#e1d2af
+palette = 1=#29f4f2
+palette = 2=#8b2b8b
+palette = 3=#7758f6
+palette = 4=#c87c00
+palette = 5=#007300
+palette = 6=#3a0000
+palette = 7=#007da0
+palette = 8=#339fba
+palette = 9=#00f6f6
+palette = 10=#c671c6
+palette = 11=#7e7eff
+palette = 12=#df8900
+palette = 13=#36bd36
+palette = 14=#9d7c7c
+palette = 15=#36a3be
+
+palette = 22=#e6cec6
+palette = 52=#c1e3d6
+palette = 153=#9e4e9e
+palette = 175=#4aaac2
+palette = 180=#b3711d
+palette = 188=#90652b
+palette = 219=#6d9b1c
+palette = 231=#567178
+palette = 252=#406069

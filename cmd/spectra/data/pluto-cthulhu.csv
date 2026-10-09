@@ -1,0 +1,11 @@
+# target: Pluto, Cthulhu (dark red equatorial region; the authors' "eastern Cthulhu" region of interest)
+# source: Protopapa, S., Olkin, C. B., Grundy, W. M., et al. (2020), Disk-resolved photometric properties of Pluto and the coloring materials across its surface, The Astronomical Journal 159, 74, doi:10.3847/1538-3881/ab5e82. Table: CDS VizieR J/AJ/159/74/fig12c (data behind figure 12), doi:10.26093/cds/vizier.51590074
+# quantity: mean radiance factor (RADF) of eastern Cthulhu from New Horizons MVIC images (13-14 July 2015 approach images); dimensionless, a regional mean at the viewing and phase geometry of those images (see the paper), NOT a geometric albedo
+# range: ONLY FOUR POINTS in the visible, one per MVIC colour filter at the filter pivot wavelengths: Blue (0.4924 um), Red (0.6235 um), NIR (0.8612 um), CH4 (0.8835 um). This is not a spectrum. MVIC filters are broad (Blue 400-550, Red 540-700, NIR 780-975, CH4 860-910 nm). The same table continues with 181 New Horizons LEISA points from 1251 nm to 2400 nm (infrared, not written here).
+# 1-sigma errors given by the authors, same order as the rows: 0.0097710790150524, 0.0115207188360174, 0.0148026051295749, 0.0150387477568582
+# units: the table gives wavelength in microns; converted to nm by multiplying by 1000 (decimal shift, no rounding). Values are as tabulated.
+nm,value
+492.424994707107,0.0585206947096734
+623.503983020782,0.0996813841082071
+861.20593547821,0.1730562863722950
+883.469045162201,0.1840942372929330

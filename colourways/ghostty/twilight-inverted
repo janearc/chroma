@@ -1,0 +1,64 @@
+# twilight -- a ground that is not dark and letters that are not bright,
+# so the ground cannot shine up through the text in rivers: an amber
+# ground with deep navy ink, 8.9:1, chosen in paratune. dark text on a
+# lightish ground.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/twilight.css;
+# change the source, not this file.
+
+background = #0053b1
+foreground = #fae8a6
+cursor-color = #fae8a6
+cursor-text = #0053b1
+selection-background = #1769c5
+selection-foreground = #fae8a6
+
+palette = 0=#d5dbe7
+palette = 1=#91d5e0
+palette = 2=#d0c5e0
+palette = 3=#a5bbef
+palette = 4=#dbc9a5
+palette = 5=#a5d5b5
+palette = 6=#e0b5b5
+palette = 7=#1363bd
+palette = 8=#b5c2d4
+palette = 9=#7bc9d5
+palette = 10=#c4b7d9
+palette = 11=#91abe7
+palette = 12=#d0bb8f
+palette = 13=#91cba6
+palette = 14=#d7a3a3
+palette = 15=#004291
+
+palette = 17=#0959b4
+palette = 18=#0f5db6
+palette = 22=#4471be
+palette = 24=#1560b3
+palette = 31=#1c63b0
+palette = 38=#2365ad
+palette = 52=#2a74be
+palette = 67=#2969ad
+palette = 103=#2f70af
+palette = 139=#3577b2
+palette = 153=#d0c5e0
+palette = 169=#4183b9
+palette = 175=#3b7db5
+palette = 180=#dbc9a5
+palette = 188=#fae8a6
+palette = 198=#4d8fc0
+palette = 205=#4789bc
+palette = 211=#5293c4
+palette = 214=#7aa5e0
+palette = 215=#75a2dd
+palette = 218=#5795c8
+palette = 219=#a5d5b5
+palette = 222=#709fda
+palette = 223=#6b9dd6
+palette = 224=#669bd3
+palette = 225=#5c97cb
+palette = 231=#fae8a6
+palette = 251=#fae8a6
+palette = 252=#fae8a6
+palette = 254=#6199cf

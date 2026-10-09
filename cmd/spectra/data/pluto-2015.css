@@ -1,0 +1,26 @@
+/*
+ * pluto-2015 -- pluto as new horizons first showed it, the day before
+ * closest approach: the picture everyone knows, sampled and not kept.
+ * source: NASA/JHUAPL/SwRI, PIA19708 "Pluto's Big Heart in Color", LORRI,
+ * 13 July 2015, 768,000 km out, coloured with lower resolution colour from
+ * Ralph taken earlier that day.
+ * https://science.nasa.gov/photojournal/plutos-big-heart-in-color
+ * file: PIA19708.tif, 1024 x 1024, 3146976 bytes, fetched 2026-10-05.
+ * colour: black and white detail coloured from another camera's coarser
+ * colour, processed for release before the 2018 recalibration; not a
+ * spectrum. each region is its pixels averaged in linear light, written to
+ * the byte; space, under 0.01 luminance, is left out.
+ *
+ * disc: every pixel inside 70% of the radius, 146380 pixels.
+ * heart: every pixel in x 427-569, y 512-668, 22152 pixels.
+ * pole: every pixel in x 427-626, y 228-313, 16915 pixels.
+ * midlands: every pixel in x 284-427, y 370-484, 16302 pixels.
+ * whale: every pixel in x 256-370, y 626-711, 9060 pixels.
+ */
+:root {
+  --disc: #d3af8f; /* oklch(78% 0.061 64.3) */
+  --heart: #e9c29d; /* oklch(84% 0.067 64.7) */
+  --pole: #d6ae88; /* oklch(78% 0.070 65.6) */
+  --midlands: #d5b69a; /* oklch(79% 0.052 63.8) */
+  --whale: #3b2819; /* oklch(30% 0.038 60.0) */
+}

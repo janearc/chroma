@@ -1,0 +1,61 @@
+# fermi-midnight -- a dark colourway, tuned in paratune from fermi-long.
+#
+# rendered by colourway from sources/fermi-midnight.css;
+# change the source, not this file.
+
+background = #0a0e30
+foreground = #7e848c
+cursor-color = #c9c9c9
+cursor-text = #7b82b2
+selection-background = #2d3458
+selection-foreground = #937a68
+
+palette = 0=#131939
+palette = 1=#aa5f52
+palette = 2=#53894b
+palette = 3=#7a7d47
+palette = 4=#5078ab
+palette = 5=#a850a3
+palette = 6=#538685
+palette = 7=#af8462
+palette = 8=#4b5d9d
+palette = 9=#b17c72
+palette = 10=#5c9e54
+palette = 11=#8e9252
+palette = 12=#6e8bae
+palette = 13=#ab73a6
+palette = 14=#5e9a97
+palette = 15=#be9f8d
+
+palette = 17=#0d182f
+palette = 18=#101b34
+palette = 22=#172c3b
+palette = 24=#001623
+palette = 28=#113c0a
+palette = 31=#001a24
+palette = 38=#011e26
+palette = 52=#2e243b
+palette = 67=#092035
+palette = 88=#561a12
+palette = 103=#22213c
+palette = 139=#372138
+palette = 153=#53894b
+palette = 169=#63024b
+palette = 175=#4b5d9d
+palette = 180=#5078ab
+palette = 188=#7e848c
+palette = 198=#77003c
+palette = 205=#6e0042
+palette = 211=#75083c
+palette = 214=#523600
+palette = 215=#553003
+palette = 218=#642147
+palette = 219=#a850a3
+palette = 222=#493402
+palette = 223=#503008
+palette = 224=#4e3030
+palette = 225=#4e2e4e
+palette = 231=#7e848c
+palette = 251=#80807f
+palette = 252=#7e848c
+palette = 254=#393838

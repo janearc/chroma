@@ -1,0 +1,61 @@
+# twilight-low -- made in paratune from twilight.
+#
+# inverted, for a screen whose colours the system inverts, so it shows as meant.
+#
+# rendered by colourway from sources/twilight-low.css;
+# change the source, not this file.
+
+background = #14c0ed
+foreground = #392100
+cursor-color = #fdff74
+cursor-text = #0065be
+selection-background = #0085e5
+selection-foreground = #dcbc00
+
+palette = 0=#ef9286
+palette = 1=#000000
+palette = 2=#2d0055
+palette = 3=#000c2c
+palette = 4=#110b00
+palette = 5=#000000
+palette = 6=#440200
+palette = 7=#000305
+palette = 8=#5c5c51
+palette = 9=#000000
+palette = 10=#2e005e
+palette = 11=#000c2a
+palette = 12=#0f0a00
+palette = 13=#000000
+palette = 14=#4d0001
+palette = 15=#000000
+
+palette = 17=#000000
+palette = 18=#000000
+palette = 22=#6f4583
+palette = 24=#000203
+palette = 31=#000101
+palette = 38=#000000
+palette = 52=#0f790f
+palette = 67=#000000
+palette = 103=#000000
+palette = 139=#000000
+palette = 153=#f5e7ed
+palette = 169=#000000
+palette = 175=#704300
+palette = 180=#562700
+palette = 188=#2e005e
+palette = 198=#000000
+palette = 205=#000000
+palette = 211=#000000
+palette = 214=#003365
+palette = 215=#002b53
+palette = 218=#000406
+palette = 219=#001e3a
+palette = 222=#002442
+palette = 223=#001d33
+palette = 224=#001628
+palette = 225=#000910
+palette = 231=#c3a3c1
+palette = 251=#797900
+palette = 252=#00061b
+palette = 254=#000e1b
